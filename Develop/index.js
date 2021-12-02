@@ -38,7 +38,7 @@ const questions=
     },
     {   type: 'input',
         name: 'tech',
-        message: "Give your project a description"
+        message: "What are the technologies that are used in this project/app"
     },
     {   type: 'input',
         name: 'install',
@@ -68,7 +68,7 @@ const questions=
                return console.error("err");
             }
             else{
-                console.log("Went Smoothly");
+                console.log("Readme is saved!!");
             }
         });
     }
@@ -90,7 +90,6 @@ async function init() {
         console.log(markdown);
         // saves at the end
         await asyncWriteFile('README.md', markdown);
-        console.log("saved your readme!!");
     } catch (error) {
         console.error("error");
     }
