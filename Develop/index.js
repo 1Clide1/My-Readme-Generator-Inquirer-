@@ -9,7 +9,16 @@ const questions=
     [
     {   type: 'input',
         name: 'author',
-        message: "What is your name?"
+        message: "What is your name?",
+        validate: author=>{
+            if (author.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'input',
         name: 'email',
@@ -20,37 +29,100 @@ const questions=
                 return true
             }
             else{
-                console.log("Please enter a correct email.")
+                console.log(" Please enter a correct email.")
             }
         }
     },
     {   type: 'input',
         name: 'github',
-        message: "What is your github username?"
+        message: "What is your github username?",
+        validate: github=>{
+            if (github.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'input',
         name: 'title',
-        message: "What is the title of your project?"
+        message: "What is the title of your project?",
+        validate: title=>{
+            if (title.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'input',
         name: 'description',
-        message: "Give your project a description"
+        message: "Give a your project a general description",
+        validate: description=>{
+            if (description.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'input',
         name: 'tech',
-        message: "What are the technologies that are used in this project/app"
+        message: "What are the technologies that are used in this project/app",
+        validate: tech=>{
+            if (tech.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'input',
         name: 'install',
-        message: "Give a description on how to install the project/What does it take for it to run"
+        message: "Give a description on how to install the project/What does it take for it to run",
+        validate: install=>{
+            if (install.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'input',
         name: 'usage',
-        message: "How do you use this app/project? Give a usage example/insctructions"
+        message: "How do you use this app/project? Give a usage example/insctructions",
+        validate: usage=>{
+            if (usage.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'input',
         name: 'credits',
-        message: "Give your final thoughts/shoutouts on who helped you with the project"
+        message: "Give your final thoughts/shoutouts on who helped you with the project",
+        validate: credits=>{
+            if (credits.length<=1){
+                console.log(" Please type more than one letter")
+            }
+            else{
+                return true
+            }
+
+        }
     },
     {   type: 'list',
         name: 'license',
